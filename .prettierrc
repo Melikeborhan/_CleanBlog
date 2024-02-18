@@ -1,0 +1,8 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true, //semi şu işe yarar ; koyup koymamak için true ise koyar false ise koymaz 
+  "singleQuote": true, // tek tırnak kullanmak için true çift tırnak kullanmak için false
+  "trailingComma": "es5"  //   virgül koyup koymamak için es5 ise koyar es5 değilse koymaz
+  
+}
