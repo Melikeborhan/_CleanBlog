@@ -1,23 +1,23 @@
 <%- include('partials/_header') -%>
-
   <!-- Main Content -->
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         
-       <% posts.forEach(data => { %>
+        <% posts.forEach(data => { %>
+
         <div class="post-preview">
-          <a href="/post">
+          <a href="/posts/<%= data._id %>"> 
             <h2 class="post-title">
-              <%= data.title %>
+              <%= posts[0].title%>
             </h2>
             <h3 class="post-subtitle">
-              <%= data.detail %>
+              <%= posts[0].detail %>
             </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
+            <a href="#">MELİKE BORHAN</a>
+            <%=posts[0].dateCreated%></p>
         </div>
         
         <hr>
@@ -25,22 +25,24 @@
         <!-- Pager -->
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="/">Older Posts &rarr;</a>
+         
         </div>
       </div>
     </div>
+    
   </div>
 
   <hr>
-
+  
   <!-- Footer -->
   <%- include('partials/footer') -%>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
+  <script src="/js/clean-blog.min.js"></script>
 
 </body>
 
